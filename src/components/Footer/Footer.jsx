@@ -7,10 +7,10 @@ import { BsTwitter } from 'react-icons/bs'
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>THERESE BLESSED</a>
+      <a href="#header" className='footer__logo'>THERESE BLESSED</a>
 
       <ul className='permalinks'>
-        <li><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#services">Services</a></li>
@@ -20,9 +20,9 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://www.facebook.com/Lily Rich" target='_blank'><BsFacebook /></a>
-        <a href="https://www.instagram.com/_favgurl22/" target='_blank'><BsInstagram /></a>
-        <a href="https://twitter.com/ThereseBlessed" target='_blank'><BsTwitter /></a>
+        <a href="https://www.facebook.com/Lily Rich" target='_blank' rel='noreferrer'><BsFacebook /></a>
+        <a href="https://www.instagram.com/_favgurl22/" target='_blank' rel='noreferrer'><BsInstagram /></a>
+        <a href="https://twitter.com/ThereseBlessed" target='_blank' rel='noreferrer'><BsTwitter /></a>
       </div>
 
       <div className="footer__copyright">
