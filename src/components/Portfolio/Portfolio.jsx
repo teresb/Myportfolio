@@ -46,7 +46,7 @@ const data = [
   {
     id: 6,
     image: IMG6,
-    title: 'Charts template & infograohics in Figma ',
+    title: 'Charts template & infographics in Figma ',
     github: 'https://github.com',
     demo: 'https://dribbble.com/Alien_pixels'
   },
