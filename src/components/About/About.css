@@ -5,7 +5,7 @@
 }
 
 .about__me {
-    width: 100%;
+    width: 10%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
     background: linear-gradient(
@@ -15,8 +15,10 @@
         transparent
     );
     display: grid;
-    place-items: center;
+    grid-template-columns: 1fr, 1fr;
+    gap: 2rem;
 }
+
 
 .about__me-image {
     border-radius: 2rem;
@@ -24,6 +26,8 @@
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
+    padding-left: 0rem;
+    padding-right: 0rem;
     
 }
 
@@ -107,5 +111,7 @@
 
     .about__content p {
         margin: 1.5rem 0;
+        padding-left: 10rem;
+        padding-right: 3rem;
     }
 }

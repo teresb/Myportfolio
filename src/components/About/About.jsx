@@ -14,7 +14,7 @@ const About = () => {
       <div className='container about__container'>
         <div className='about__me'>
           <div className='about__me-image'>
-            <img src={ME} alt="myself" />
+            <img src={ME} alt="About" />
 
           </div>
 
@@ -25,23 +25,27 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
-              <small>2+ Years Working</small>
+              <small>3+ Years Working</small>
             </article>
 
             <article className='about__card'>
               <FiUsers className='about__icon'/>
               <h5>Clients</h5>
-              <small>20+ Nationwide</small>
+              <small>50+ Nationwide</small>
             </article>
 
             <article className='about__card'>
               <VscFolderLibrary className='about__icon'/>
               <h5>Projects</h5>
-              <small>10 Completed Projects</small>
+              <small>30+ Completed Projects</small>
             </article>
           </div>
           <p>
-                      
+           <a href='#about' className='about__content'>i am a highly motivated student, 
+            pursuing a bachelor in Engineering in 
+            Computer Engineering in the University of Buea, 
+            with background knowledge in Mathematics, data analysis, 
+            database management, and Mobile App development.</a>        
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
