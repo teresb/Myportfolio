@@ -1,37 +1,60 @@
 import React from 'react'
 import './Contact.css'
-import {MdOutlineEmail} from 'react-icons/md'
-import {AiOutlineLinkedin} from 'react-icons/ai'
-import {BsWhatsapp} from 'react-icons/bs'
-import {useRef} from 'react'
+import { TfiEmail } from 'react-icons/tfi'
+import { FaFacebookMessenger } from 'react-icons/fa'
+import { IoLogoWhatsapp } from 'react-icons/io'
+import { useRef } from 'react';
 import emailjs from 'emailjs-com'
+
 const Contact = () => {
-const form = useRef();
-const sendEmail = (e) => {
-e.preventDefault();
-emailjs.sendForm('service_5vuauza', 'template_fdnnl56', form.current,'EmSdUNQzQuxkUqGWx') 
-e.target.reset()
-.then((result) => {
-console.log(result.text)
-},(error) =>{
-console.log(error.text);
-});
-};
-return ( <section id="contact"> <h5>Get in touch</h5> <h2>Contact me</h2> <div className="container contact__container"> <div className="contact__options"> <article className='contact__option'> <MdOutlineEmail className='contact__option__icon'/>
-<h4>Email</h4> <h5>myEmail@gmail.com</h5> <a href='mailto:aldenovpoutine99@gmail.com' target='_blank' rel="noreferrer">send a
-message</a>
-</article> <article className='contact__option'> <AiOutlineLinkedin className='contact__option__icon'/>
-<h4>LinkedIn</h4> <h5>Profile</h5> <a href='https://www.linkedin.com/in/brown-djomo-844b96164/'
-target='_blank' rel="noreferrer">Tape me on LinkedIn</a>
-</article> <article className='contact__option'> <BsWhatsapp className='contact__option__icon'/>
-<h4>Whatsapp</h4> <h5>Direct message</h5> <a href='https://web.whatsapp.com/send?phone=+237650956874'
-target='_blank' rel="noreferrer">Whatsapp me</a>
-</article>
-</div> <form ref={form} onSubmit={sendEmail}> <input type="text" name='name' placeholder='full name' required/>
-<input type="email" name='email' placeholder='your email' required/>
-<textarea name="message" id="message" cols="30" rows="10"
-placeholder='your message' required></textarea> <button type="submit" className='btn btn-primary'>send message</button>
-</form>
-</div>
-</section> ) }
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_zw79eef', 'template_v2zk59f', form.current, 's9LVVssyQ-S_QYygN')
+  
+    e.target.reset()
+  };
+
+  return (
+    <section id='contact'>
+      <h5>Get In touch</h5>
+      <h2>Contact Me</h2>
+
+      <div className="container contact__container">
+        <div className="contact__options">
+          <article className='contact__option'>
+          <TfiEmail className='contact__option-icon'/>
+            <h4>Email</h4>
+            <h5>theresechikodi2004@icloud.com</h5>
+            <a href="mailto:theresechikodi20042icloud.com" target='_blank' rel='noreferrer'>Send a message</a>
+          </article>
+
+          <article className='contact__option'>
+          <FaFacebookMessenger className='contact__option-icon'/>
+            <h4>Messenger</h4>
+            <h5>Lily Rich</h5>
+            <a href="https://m.me/Lily Rich" target='_blank' rel='noreferrer'>Send a message</a>
+          </article>
+
+          <article className='contact__option'>
+          <IoLogoWhatsapp className='contact__option-icon'/>
+            <h4>WhatsApp</h4>
+            <h5>+237 650 956 974</h5>
+            <a href="https://wa.me/message/CK6QHV5DUBM3H1" target='_blank' rel='noreferrer'>Send a message</a>
+          </article>
+        </div>
+
+        <form ref={form} onSubmit={sendEmail}>
+          <input type="text" name='name' placeholder='Your Full Name' required />
+          <input type="text" name='email' placeholder='Your Email' required />
+          <textarea name="message" rows="7" placeholder='Your Message'></textarea>
+          <button type='submit' className='btn btn-primary'>Send Message</button>
+        </form>
+      </div>
+    </section>
+  )
+}
+
 export default Contact
