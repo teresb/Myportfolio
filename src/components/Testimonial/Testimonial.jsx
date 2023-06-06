@@ -1,17 +1,17 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import './testimonial.css'
-import AVTR1 from '../../assets/Screenshot.png'
-import AVTR2 from '../../assets/Screenshot.png'
-import AVTR3 from '../../assets/Screenshot.png'
-import AVTR4 from '../../assets/Screenshot.png'
+import AVTR1 from '../../assets/Marion.png'
+import AVTR2 from '../../assets/Sandra.png'
+import AVTR3 from '../../assets/Stersy.png'
+import AVTR4 from '../../assets/Sharlynn.png'
 
 // import Swiper core and required modules
 import { Navigation } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
+// Import Swiper style
 import 'swiper/css';
 import 'swiper/css/navigation';
 

@@ -35,14 +35,14 @@ const Contact = () => {
           <FaFacebookMessenger className='contact__option-icon'/>
             <h4>Messenger</h4>
             <h5>Lily Rich</h5>
-            <a href="https://m.me/Lily Rich" target='_blank' rel='noreferrer'>Send a message</a>
+            <a href="https://m.me/LilyRich" target='_blank' rel='noreferrer'>Send a message</a>
           </article>
 
           <article className='contact__option'>
           <IoLogoWhatsapp className='contact__option-icon'/>
             <h4>WhatsApp</h4>
             <h5>+237 650 956 974</h5>
-            <a href="https://wa.me/message/CK6QHV5DUBM3H1" target='_blank' rel='noreferrer'>Send a message</a>
+            <a href="https://web.whatsapp.com/send?phone=+237650956874" target='_blank' rel='noreferrer'>Send a message</a>
           </article>
         </div>
 
