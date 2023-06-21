@@ -31,7 +31,7 @@
 }
 
 .swiper-button-next .swiper-button-prev .swiper-button-disabled {
-    color: var(--color-primary);
+    background-color: red;
 }
 
 /*############# MEDIA QUERIES (MEDIUM DEVICES) ########### */

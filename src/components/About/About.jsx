@@ -41,11 +41,13 @@ const About = () => {
             </article>
           </div>
           <p>
-           <a href='#about' className='about__content'>i am a highly motivated student, 
-            pursuing a bachelor in Engineering in 
-            Computer Engineering in the University of Buea, 
-            with background knowledge in Mathematics, data analysis, 
-            database management, and Mobile App development.</a>        
+           <a href='#about' className='about__content'>
+            i am a highly motivated student,pursuing
+            a bachelor in Engineering in Computer 
+            Engineering in the University of Buea, 
+            with background knowledge in Mathematics, 
+            data analysis, database management, and 
+            Mobile App development.</a>        
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>

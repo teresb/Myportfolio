@@ -12,11 +12,7 @@
     transition: var(--transition);
 }
 
-.service:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
-}
+
 
 .service__head {
     background: var(--color-primary);
@@ -48,6 +44,7 @@
 
 .service__list p {
     font-size: 0.7rem;
+    color: var(--color-primary);
     text-align: left;
 }
 
