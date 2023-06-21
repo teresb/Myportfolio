@@ -1,5 +1,5 @@
 .container.testimonials__container {
-    width: 40%;
+    width: 55%;
     padding-left: 3rem;
     padding-right: 3rem;
 }
@@ -23,7 +23,8 @@
 
 .client__review {
     color: var(--color-light);
-    font-weight: 300;
+    font-weight: 200;
+    font-size: 0.7rem;
     display: block;
     width: 80%;
     margin: 0.8rem auto 0;
