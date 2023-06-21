@@ -27,10 +27,7 @@ const Services = () => {
             <MdOutlineLibraryAddCheck className='service__list-icon' />
             <p>I pay close attention to every aspect of the design, from the layout to the typography, to ensure that it is visually appealing and user-friendly.</p>
             </li>
-            <li>
-            <MdOutlineLibraryAddCheck className='service__list-icon' />
-            <p> I work closely with cross-functional teams, such as developers and product managers, to deliver exceptional user experiences that meet the needs of all stakeholders.</p>
-            </li>
+        
           </ul>
         </article>
         { /*END OF DESIGN*/ }
@@ -53,10 +50,7 @@ const Services = () => {
             <MdOutlineLibraryAddCheck className='service__list-icon' />
             <p> I am constantly expanding my knowledge and keeping up-to-date with the latest programming languages, frameworks, and best practices.</p>
             </li>
-            <li>
-            <MdOutlineLibraryAddCheck className='service__list-icon' />
-            <p>I work well in teams, communicating effectively with other programmers and stakeholders to deliver high-quality software products.</p>
-            </li>
+          
           </ul>
         </article>
         { /*END OF PROGRAMMING*/ }
