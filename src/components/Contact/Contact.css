@@ -1,7 +1,7 @@
 .container.contact__container {
     width: 58%;
     display: grid;
-    grid-template-columns: 30% 58%;
+    grid-template-columns: 50% 58%;
     gap: 12%;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .contact__option-icon {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
