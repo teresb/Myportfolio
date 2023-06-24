@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect,useState} from 'react'
+import axios from 'axios'
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
@@ -37,6 +38,21 @@ const data = [
 ]
 
 const Portfolio = () => {
+  const [data, setData]=useState([]);
+  useEffect(()=>{
+    axios.get("https://nice-erin-starfish-cap.cyclic.app/api/portfolio").then(response=>{
+      const formattedData=response.data.data.map(item=>({
+        id:item._id,
+        image: item.image,
+        title: item.title,
+        github: item.github,
+        demo: item.demo
+      }));
+      setData(formattedData)
+    }).catch(error=>{
+      console.log("Error fetching Portfolio Data:",error);
+    })
+  })
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>

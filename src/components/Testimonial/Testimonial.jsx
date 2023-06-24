@@ -40,6 +40,20 @@ const data = [
 ]
 
 const Testimonials = () => {
+  const [data, setData]=useState([]);
+  useEffect(()=>{
+    axios.get("https://nice-erin-starfish-cap.cyclic.app/api/testimonials").then(response=>{
+      const formattedData=response.data.data.map(item=>({
+        id:item._id,
+        avatar: item.avatar,
+        name: item.name,
+        review: item.review,
+      }));
+      setData(formattedData)
+    }).catch(error=>{
+      console.log("Error fetching Portfolio Data:",error);
+    })
+  })
   return (
     <section id='testimonials'>
       <h5>Review from clients</h5>
