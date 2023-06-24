@@ -35,7 +35,7 @@ const Contact = () => {
           <FaInstagram className='contact__option-icon'/>
             <h4>Instagram</h4>
             <h5>Therese Blessed</h5>
-            <a href="https://m.me/LilyRich" target='_blank' rel='noreferrer'>Send a message</a>
+            <a href="https://instagram.com/_yourfavgurl22?igshid=OGQ5ZDc2ODk2ZA==" target='_blank' rel='noreferrer'>Send a message</a>
           </article>
 
           <article className='contact__option'>
