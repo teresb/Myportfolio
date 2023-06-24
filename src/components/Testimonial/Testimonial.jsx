@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from 'react'
+import React, { useEffect,useState} from 'react'
+import axios from 'axios'
 import './testimonial.css'
 import AVTR1 from '../../assets/Marion.png'
 import AVTR2 from '../../assets/Sandra.png'

@@ -9,12 +9,12 @@ box-sizing: border-box;
 list-style: none;
 text-decoration: none; }
 :root{ 
---color-bg: #ae887b;
---color-bg-variant:#f0ded0;
---color-primary:#5e5946;
+--color-bg: #4679cb;
+--color-bg-variant: rgb(255, 255, 255) ;
+--color-primary:#060606;
 --color-primary-variant:#c3c1ab;
---color:#d9bfb1;
---color-light:#5e5946;
+--color:rgb(12, 7, 7);
+--color-light:#000000;
 --container-width-lg:75%; /*size of the container we are going to use on different*/
 --container-width-md:86%;/*screen size*/
 --container-width-sm:90%;

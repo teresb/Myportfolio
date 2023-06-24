@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.css'
 import { TfiEmail } from 'react-icons/tfi'
-import { FaFacebookMessenger } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
@@ -12,7 +12,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_zw79eef', 'template_v2zk59f', form.current, 's9LVVssyQ-S_QYygN')
+    emailjs.sendForm('service_fp6c146', 'template_43yv5dc', form.current, 'GqsgqRLAyOY5R8g6t')
   
     e.target.reset()
   };
@@ -32,9 +32,9 @@ const Contact = () => {
           </article>
 
           <article className='contact__option'>
-          <FaFacebookMessenger className='contact__option-icon'/>
-            <h4>Messenger</h4>
-            <h5>Lily Rich</h5>
+          <FaInstagram className='contact__option-icon'/>
+            <h4>Instagram</h4>
+            <h5>Therese Blessed</h5>
             <a href="https://m.me/LilyRich" target='_blank' rel='noreferrer'>Send a message</a>
           </article>
 
@@ -42,7 +42,7 @@ const Contact = () => {
           <IoLogoWhatsapp className='contact__option-icon'/>
             <h4>WhatsApp</h4>
             <h5>+237 650 956 974</h5>
-            <a href="https://web.whatsapp.com/send?phone=+237650956874" target='_blank' rel='noreferrer'>Send a message</a>
+            <a href="https://wa.link/xntu67" target='_blank' rel='noreferrer'>Send a message</a>
           </article>
         </div>
 
